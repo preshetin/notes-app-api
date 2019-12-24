@@ -73,10 +73,10 @@ functions:
     handler: update.main
     events:
       - http: 
-        path: notes/{id}
-        method: put
-        cors: true
-        authorizer: aws_iam
+          path: notes/{id}
+          method: put
+          cors: true
+          authorizer: aws_iam
   delete:
     handler: delete.main
     events:
